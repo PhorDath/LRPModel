@@ -606,6 +606,24 @@ void LRP::prodhonModel(GRBModel & model)
 	//c8(model);
 }
 
+void LRP::barretoModel(GRBModel & model)
+{
+	wmodel = 2;
+	var_x_barreto(model);
+	//var_xijl_barreto(model);
+	//var_xikl_barreto(model);
+	//var_xkil_barreto(model);
+	var_y_barreto(model);
+	var_u_barreto(model);
+	fo_barreto(model);
+	c1_barreto(model);
+	c2_barreto(model);
+	c3_barreto(model);
+	//c4_barreto(model); // infisable
+	c5_barreto(model);
+	c6_barreto(model);
+}
+
 float LRP::distance(coordinate a, coordinate b)
 {
 	return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
