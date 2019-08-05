@@ -21,9 +21,15 @@
     <ClCompile Include="LRP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LRP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

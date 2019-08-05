@@ -1,14 +1,16 @@
 #include <iostream>
-#include "LRP.h"
+#include "PI.h"
 
 using namespace std;
-
-const string dir = "D:/Victor/Pos-Graduacao/UFV/2 periodo/INF682/Trabalhos/02/Instances_Prodhon_LRP/";
-const string inst = "coord20-5-1.dat";
+const string dir = "D:/Victor/Pos-Graduacao/UFV/Project/Instances/Instances_Prodhon_LRP/";
+const string a = "test04.txt";
+const string b = "coord20-5-1.dat";
 
 int main() {
-	LRP lrp(dir + "test01.txt");
-	lrp.printData();
-	lrp.model();
+	//LRP lrp(dir + a);
+	//lrp.printData();
+	//lrp.model();
+	PI prodhon(dir + a);
+	prodhon.printData();
 	return 0;
 }
